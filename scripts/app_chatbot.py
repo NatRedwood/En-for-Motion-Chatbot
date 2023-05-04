@@ -36,7 +36,7 @@ if "visibility" not in st.session_state:
 
 # chatbot starts here
 name = st.text_input("Hey, welcome to En-for-Motion! What's your name?",
-                    placeholder="Pizza Pussy Santa, Ladies and Gentelmen, etc...",
+                    placeholder="Type your name...",
                     key="name")
 answers = []
 
