@@ -2,3 +2,4 @@
 results/model3_new_data_balanced_emotion/assets/tokens.txt filter=lfs diff=lfs merge=lfs -text
 results/model3_new_data_balanced_emotion/variables/variables.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
 results/model3_new_data_balanced_emotion/variables/variables.index filter=lfs diff=lfs merge=lfs -text
+results/model3_new_data_balanced_emotion/assets/ filter=lfs diff=lfs merge=lfs -text
