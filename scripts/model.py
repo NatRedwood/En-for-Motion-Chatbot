@@ -5,9 +5,6 @@ MODEL_PATH = "https://tfhub.dev/google/tf2-preview/nnlm-en-dim50-with-normalizat
 hub_layer = hub.KerasLayer(MODEL_PATH, output_shape=[50], input_shape=[], 
                            dtype=tf.string, trainable=True)
 
-#print("\nBert embeddings:")
-#hub_layer(train['text'][:3])
-
 model = tf.keras.Sequential()
 model.add(hub_layer)
 model.add(tf.keras.layers.Dense(16, activation='relu', kernel_regularizer=tf.keras.regularizers.l1_l2(l1=0, l2=0.001)))
