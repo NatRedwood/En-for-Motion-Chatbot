@@ -5,3 +5,4 @@ stlib
 streamlit
 tensorflow
 tensorflow_hub
+webbrowser
