@@ -8,18 +8,18 @@ from PIL import Image
 st.set_page_config(layout = "wide")
 
 # define the saved model path
-model = load_model('scripts/results/model3_new_data_balanced_emotion/',compile=False)
+model = load_model('results/model3_new_data_balanced_emotion/',compile=False)
 
 # SPECIFY WHICH MODEL TO PREDICT ON
-train_data = preprocess('data/final_datasets/model3/train.txt')
+train_data = preprocess('../data/final_datasets/model3/train.txt')
 train = train_data.copy()
 
 # predict on train data
 predstr = model.predict(train.text)
 
 # urls to webpages and images
-url_help = 'https://www.nimh.nih.gov/health/find-help'
-image_brain = Image.open('scripts/images/brain_hands.png')
+url_help = '[Get Help](https://www.nimh.nih.gov/health/find-help)'
+image_brain = Image.open('images/brain_hands.png')
 
 # create chatbot interface
 st.title("En-for-Motion")
@@ -111,11 +111,15 @@ if len(name) > 0:
                                             st.subheader("We all know life has ups and downs. It's not always perfect but taking care of yourself will definitelyhelp you improve your well-being. Focus and work on the improvement!")
                                         elif score < 46 and score > 41: # all answers 'bad' - 45.62471
                                             st.subheader("It looks like you're struggling a lot recently. Focus on what you need to feel better. Think how you can change your situation. Don't be afraid to seek help from a trained professional to improve your well-being.")
-                                            if st.button('Get help'):
-                                                webbrowser.open_new_tab(url_help)
+                                            #if st.button('Get help'):
+                                                #new = 2
+                                                #webbrowser.get(using='google-chrome').open(url_help,new=new)
+                                            st.markdown(url_help, unsafe_allow_html=True)
                                         elif score < 41: # all answers 'horrible' - 40.37927
                                             st.subheader("It sucks to see that things have been hard for you lately. I'm wondering if you are struggling with things that a therapist could help with? I hate to see you feeling so down and I want to help you get connected to anything that would be helpful. Maybe you would like talking to someone safe and confidential?")
-                                            if st.button('Get help'):
-                                                webbrowser.open_new_tab(url_help)
+                                            #if st.button('Get help'):
+                                                #new=2
+                                                #webbrowser.get(using='google-chrome').open(url_help,new=new)
+                                            st.markdown(url_help, unsafe_allow_html=True)
 else:
     st.text("Please, answer the question. Trust me, I want to help you.")
