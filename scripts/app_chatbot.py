@@ -8,10 +8,10 @@ from PIL import Image
 st.set_page_config(layout = "wide")
 
 # define the saved model path
-model = load_model('results/model3_new_data_balanced_emotion',compile=False)
+model = load_model('scripts/results/model3_new_data_balanced_emotion',compile=False)
 
 # SPECIFY WHICH MODEL TO PREDICT ON
-train_data = preprocess('../data/final_datasets/model3/train.txt')
+train_data = preprocess('data/final_datasets/model3/train.txt')
 train = train_data.copy()
 
 # predict on train data
@@ -19,7 +19,7 @@ predstr = model.predict(train.text)
 
 # urls to webpages and images
 url_help = '[Get Help](https://www.nimh.nih.gov/health/find-help)'
-image_brain = Image.open('images/brain_hands.png')
+image_brain = Image.open('scripts/images/brain_hands.png')
 
 # create chatbot interface
 st.title("En-for-Motion")
