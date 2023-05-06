@@ -8,7 +8,7 @@ from PIL import Image
 st.set_page_config(layout = "wide")
 
 # define the saved model path
-model = load_model('scripts/results/model3_new_data_balanced_emotion',compile=False)
+model = load_model('scripts/results/model3_new_data_balanced_emotion')
 
 # SPECIFY WHICH MODEL TO PREDICT ON
 train_data = preprocess('data/final_datasets/model3/train.txt')
