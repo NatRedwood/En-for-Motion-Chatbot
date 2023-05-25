@@ -1,6 +1,7 @@
 # En-for-Motion-Chatbot
 
-![main_api](https://github.com/NatRedwood/En-for-Motion-Chatbot/blob/main/images/apimain.png)
+#![main_api](https://github.com/NatRedwood/En-for-Motion-Chatbot/blob/main/images/apimain.png)
+<img src="https://github.com/NatRedwood/En-for-Motion-Chatbot/blob/main/images/apimain.png" width=50% height=50%>
 
 PDF version of the paper includes all the details about the project: [paper](https://github.com/NatRedwood/En-for-Motion-Chatbot/blob/main/RedwoodN_En_for_Motion_Chatbot.pdf).
 
