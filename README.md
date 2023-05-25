@@ -34,7 +34,7 @@ love, sadness, fear, anger and surprise. The labels
 are then put into 2 buckets: positive (joy and love)
 and negative (sadness, fear, anger and surprise).
 
-<img src="(https://github.com/NatRedwood/En-for-Motion-Chatbot/blob/main/images/em_data_ex.png" width=60% height=60%>
+<img src="https://github.com/NatRedwood/En-for-Motion-Chatbot/blob/main/images/em_data_ex.png" width=60% height=60%>
 
 ## More info
 For more details, check the paper: [paper PDF](https://github.com/NatRedwood/En-for-Motion-Chatbot/blob/main/RedwoodN_En_for_Motion_Chatbot.pdf).
